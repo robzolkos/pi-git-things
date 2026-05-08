@@ -1,5 +1,3 @@
-# pi-git-things
-
 ```bash
 pi install npm:pi-git-things
 ```
