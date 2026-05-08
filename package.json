@@ -1,0 +1,34 @@
+{
+  "name": "pi-git-things",
+  "version": "0.1.0",
+  "description": "Pi prompt templates for proposing commit messages and pull request descriptions.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Rob Zolkos",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/robzolkos/pi-git-things.git"
+  },
+  "bugs": {
+    "url": "https://github.com/robzolkos/pi-git-things/issues"
+  },
+  "homepage": "https://github.com/robzolkos/pi-git-things#readme",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "prompt-template",
+    "git",
+    "commit",
+    "pull-request"
+  ],
+  "files": [
+    "prompts/",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "prompts": [
+      "./prompts"
+    ]
+  }
+}
