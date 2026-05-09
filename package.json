@@ -1,6 +1,6 @@
 {
   "name": "pi-git-things",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Pi prompt templates for proposing commit messages and pull request descriptions.",
   "type": "module",
   "license": "MIT",
