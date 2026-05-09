@@ -4,13 +4,23 @@ description: Suggest a possible PR title and description for the current changes
 
 # Workflow
 
-1. Read the rules
-2. If we were to make a PR what would the PR title and description be
-3. Display the proposed PR and ask the user if they want to create a PR with this title and description
+1. Look for intent in session history (prior messages, commits, linked issues).
+2. If intent can be inferred from session history, proceed.
+3. If intent cannot be inferred, ask **one** specific question before drafting.
+4. Draft the PR title and description. Display it and ask the user if they want to create the PR.
 
-## Rules
+# Rules
 
-- Include a summary section at top that includes the 'why' of the PR 
-- Do not include a separate Why section as that will be in the summary.
-- Do not include a Testing or Verification section.
-- Do not include a list of files changed as that is already known by git.
+**Title:**
+- Imperative mood: "Add", "Fix", "Refactor", "Update", "Extract"
+- Start with a capital letter, no trailing period, one line
+- Descriptive but concise
+
+**Description:**
+- Summary: 1-2 sentences at the top stating the change and why. State the change, not the implementation.
+- NEVER fabricate intent. If the user declines to provide one, say so in the PR — don't invent one.
+- NEVER list files. GitHub shows this already.
+- NEVER narrate code changes. The diff shows the implementation.
+- NEVER speculate on risks. Only mention risks the user explicitly raised.
+- No separate "Why" section — the why lives in the summary.
+- No "Testing" or "Verification" section.
